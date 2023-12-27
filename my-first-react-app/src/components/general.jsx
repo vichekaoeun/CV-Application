@@ -1,8 +1,9 @@
+import '../styles/general.css';
 export default function general() {
     return (
-        <>
-            <>
-                <h1>Personal Details</h1>
+        <div>
+            <h1>Personal Details</h1>
+            <form>
                 <div id='name'>
                     <h1>Full Name</h1>
                     <input type="text" />
@@ -19,8 +20,11 @@ export default function general() {
                     <h1>Address</h1>
                     <input type="text" />
                 </div>
-            </>
+                <div>
+                    <button>Save</button>
+                </div>
+            </form>
 
-        </>
+        </div>
     );
 }
