@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import Experience from './components/experience.jsx'
 import General from './components/general.jsx'
 import Education from './components/education.jsx'
