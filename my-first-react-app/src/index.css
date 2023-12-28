@@ -8,3 +8,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 50%);
 }
+
+.drop-down {
+  position: relative;
+}

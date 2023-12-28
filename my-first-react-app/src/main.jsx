@@ -1,14 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom/client'
-import Experience from './components/experience.jsx'
-import General from './components/general.jsx'
-import Education from './components/education.jsx'
+import App from './components/app.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <General />
-    <Experience />
-    <Education />
+    <App />
   </React.StrictMode>,
 )
