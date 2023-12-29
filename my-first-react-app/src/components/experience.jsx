@@ -1,7 +1,7 @@
+import App from './app.jsx'
 export default function experience() {
     return (
         <div>
-            <h1>Education</h1>
             <form>
                 <div id="degree">
                     <h1>Degree</h1>

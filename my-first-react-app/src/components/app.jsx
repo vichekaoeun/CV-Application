@@ -4,37 +4,47 @@ import Education from './education.jsx';
 import { useState } from 'react';
 
 export default function app() {
-    const [general, setGeneral] = useState(<><h1>Personal</h1></>);
-    const [experience, setExperience] = useState(<><h1>Experience</h1></>);
-    const [education, setEducation] = useState(<><h1>Education</h1></>);
+
+    const [general, setGeneral] = useState(false);
+    const [experience, setExperience] = useState(false);
+    const [education, setEducation] = useState(false);
 
     function displayGeneral() {
-        setGeneral(< General />)
+        setGeneral(!general);
     }
 
     function displayExperience() {
-        setExperience(< Education />)
+        setExperience(!experience);
     }
 
     function displayEducation() {
-        setEducation(< Experience />)
+        setEducation(!education);
     }
 
     return (
         <>
             <div className="drop-menu">
-                {general}
-                <button onClick={displayGeneral}>toggle</button>
+                <h1>Personal</h1>
+                <button onClick={displayGeneral}>
+                    {general ? 'untoggle' : 'toggle'}
+                </button>
+                {general && <General />}
             </div>
 
             <div className="drop-menu">
-                {experience}
-                <button onClick={displayExperience}>toggle</button>
+                <h1>Education</h1>
+                <button onClick={displayExperience}>
+                    {experience ? 'untoggle' : 'toggle'}
+                </button>
+                {experience && <Experience />}
             </div>
 
             <div className="drop-menu">
-                {education}
-                <button onClick={displayEducation}>toggle</button>
+                <h1>Experience</h1>
+                <button onClick={displayEducation}>
+                    {education ? 'untoggle' : 'toggle'}
+                </button>
+                {education && <Education />}
             </div>
         </>
     );

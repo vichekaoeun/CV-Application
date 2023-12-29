@@ -1,8 +1,8 @@
+import App from './app.jsx'
 import '../styles/general.css';
 export default function general() {
     return (
         <div>
-            <h1>Personal Details</h1>
             <form>
                 <div id='name'>
                     <h1>Full Name</h1>
@@ -24,7 +24,6 @@ export default function general() {
                     <button>Save</button>
                 </div>
             </form>
-
         </div>
     );
 }

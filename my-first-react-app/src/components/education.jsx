@@ -1,8 +1,8 @@
+import App from './app.jsx'
 import '../styles/education.css'
 export default function education() {
     return (
         <div>
-            <h1>Experience</h1>
             <form>
                 <div>
                     <h1>Job title</h1>
