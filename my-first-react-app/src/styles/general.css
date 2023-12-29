@@ -1,4 +1,20 @@
-.container1 {
+.container {
+    padding: 10px;
+}
+
+form {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    gap: 20px;
+}
+
+#save-btn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: grey;
+    grid-column: 2 / 3;
+}
+
+.save {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) repeat(1, 50px);
 }

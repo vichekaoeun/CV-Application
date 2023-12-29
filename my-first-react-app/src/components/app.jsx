@@ -29,7 +29,7 @@ export default function app() {
             <div className="drop-menu">
                 <h1>Personal</h1>
                 <button onClick={displayGeneral}>
-                    {general ? <FontAwesomeIcon icon={faToggleOff} /> : <FontAwesomeIcon icon={faToggleOn} />}
+                    {general ? <FontAwesomeIcon icon={faToggleOff} className="toggle" /> : <FontAwesomeIcon icon={faToggleOn} className='toggle' />}
                 </button>
                 {general && <General />}
             </div>
@@ -37,7 +37,7 @@ export default function app() {
             <div className="drop-menu">
                 <h1>Education</h1>
                 <button onClick={displayExperience}>
-                    {experience ? <FontAwesomeIcon icon={faToggleOff} /> : <FontAwesomeIcon icon={faToggleOn} />}
+                    {experience ? <FontAwesomeIcon icon={faToggleOff} className='toggle' /> : <FontAwesomeIcon icon={faToggleOn} className='toggle' />}
                 </button>
                 {experience && <Experience />}
             </div>
@@ -45,7 +45,7 @@ export default function app() {
             <div className="drop-menu">
                 <h1>Experience</h1>
                 <button onClick={displayEducation}>
-                    {education ? <FontAwesomeIcon icon={faToggleOff} /> : <FontAwesomeIcon icon={faToggleOn} />}
+                    {education ? <FontAwesomeIcon icon={faToggleOff} className='toggle' /> : <FontAwesomeIcon icon={faToggleOn} className='toggle' />}
                 </button>
                 {education && <Education />}
             </div>

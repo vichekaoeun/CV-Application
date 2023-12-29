@@ -2,7 +2,7 @@ import App from './app.jsx'
 import '../styles/education.css'
 export default function education() {
     return (
-        <div>
+        <div className='container'>
             <form>
                 <div>
                     <h1>Job title</h1>
@@ -22,7 +22,9 @@ export default function education() {
                         <input type="date" />
                     </div>
                 </div>
-                <button>Save</button>
+                <div className='save'>
+                    <button id="save-btn">Save</button>
+                </div>
             </form>
         </div>
     );

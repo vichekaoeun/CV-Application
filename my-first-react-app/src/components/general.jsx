@@ -2,7 +2,7 @@ import App from './app.jsx'
 import '../styles/general.css';
 export default function general() {
     return (
-        <div>
+        <div className='container'>
             <form>
                 <div id='name'>
                     <h1>Full Name</h1>
@@ -20,8 +20,8 @@ export default function general() {
                     <h1>Address</h1>
                     <input type="text" />
                 </div>
-                <div>
-                    <button>Save</button>
+                <div className='save'>
+                    <button id="save-btn">Save</button>
                 </div>
             </form>
         </div>

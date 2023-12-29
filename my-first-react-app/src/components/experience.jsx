@@ -1,7 +1,7 @@
 import App from './app.jsx'
 export default function experience() {
     return (
-        <div>
+        <div className='container'>
             <form>
                 <div id="degree">
                     <h1>Degree</h1>
@@ -23,7 +23,9 @@ export default function experience() {
                     <h1>Country</h1>
                     <input type="text" />
                 </div>
-                <button>Save</button>
+                <div className='save'>
+                    <button id="save-btn">Save</button>
+                </div>
             </form>
         </div>
     )
