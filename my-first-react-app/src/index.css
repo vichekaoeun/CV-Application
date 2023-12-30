@@ -4,19 +4,21 @@ body {
   height: 100vh;
 }
 
-#root {
+.app {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  height: 100%;
 }
 
-.app {
+.section1 {
   grid-column: 1 / 2;
 }
 
-.cv {
+.section2 {
   grid-column: 2 / 4;
   border: 1px solid;
-  margin: 5px;
   border-radius: 8px;
+  margin: 4px;
   padding: 5px;
 }

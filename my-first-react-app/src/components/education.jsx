@@ -1,10 +1,12 @@
 import App from './app.jsx'
 import '../styles/education.css'
+import { useState } from 'react';
 export default function education() {
     const [JobData, SetJobData] = useState('');
     const [CompanyData, SetCompanyData] = useState('');
     const [SDateData, SetSDateData] = useState('');
     const [EDateData, SetEDateData] = useState('');
+
     return (
         <div className='container'>
             <form>

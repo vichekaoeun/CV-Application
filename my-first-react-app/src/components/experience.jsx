@@ -1,4 +1,5 @@
 import App from './app.jsx'
+import { useState } from 'react';
 export default function experience() {
     const [DegreeData, SetDegreeData] = useState('');
     const [SchoolData, SetSchoolData] = useState('');
