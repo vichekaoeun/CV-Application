@@ -2,10 +2,21 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+}
+
+#root {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
-#root {
-  grid-column: 2 / 3;
+.app {
+  grid-column: 1 / 2;
+}
+
+.cv {
+  grid-column: 2 / 4;
+  border: 1px solid;
+  margin: 5px;
+  border-radius: 8px;
+  padding: 5px;
 }
