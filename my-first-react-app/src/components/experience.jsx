@@ -1,14 +1,25 @@
 import App from './app.jsx'
 import { useState } from 'react';
-export default function experience() {
+export default function experience({ onDataSave }) {
     const [DegreeData, SetDegreeData] = useState('');
     const [SchoolData, SetSchoolData] = useState('');
     const [CityData, SetCityData] = useState('');
     const [CountryData, SetCountryData] = useState('');
 
+    const handleSave = (e) => {
+        e.preventDefault();
+        onDataSave((prevData) => ({
+            ...prevData,
+            degree: DegreeData,
+            school: SchoolData,
+            city: CityData,
+            country: CountryData,
+        }));
+    }
+
     return (
         <div className='container'>
-            <form>
+            <form onSubmit={handleSave}>
                 <div id="degree">
                     <h1>Degree</h1>
                     <input type="text" name='degree' value={DegreeData} onChange={(e) => SetDegreeData(e.target.value)} />

@@ -10,12 +10,13 @@ export default function general({ onDataSave }) {
 
     const handleSave = (e) => {
         e.preventDefault();
-        onDataSave({
+        onDataSave((prevData) => ({
+            ...prevData,
             name: NameData,
             email: EmailData,
             phone: PhoneData,
             address: AddressData,
-        })
+        }));
     }
     return (
         <div className='container'>

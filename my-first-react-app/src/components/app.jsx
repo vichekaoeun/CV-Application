@@ -29,6 +29,15 @@ export default function app() {
         email: '',
         phone: '',
         address: '',
+        degree: '',
+        school: '',
+        city: '',
+        country: '',
+        job: '',
+        company: '',
+        sdate: '',
+        edate: '',
+
     });
 
     const onDataSave = (newData) => {
@@ -51,7 +60,7 @@ export default function app() {
                     <button onClick={displayExperience}>
                         {experience ? <FontAwesomeIcon icon={faToggleOff} className='toggle' /> : <FontAwesomeIcon icon={faToggleOn} className='toggle' />}
                     </button>
-                    {experience && <Experience />}
+                    {experience && <Experience onDataSave={onDataSave} />}
                 </div>
 
                 <div className="drop-menu">
@@ -59,7 +68,7 @@ export default function app() {
                     <button onClick={displayEducation}>
                         {education ? <FontAwesomeIcon icon={faToggleOff} className='toggle' /> : <FontAwesomeIcon icon={faToggleOn} className='toggle' />}
                     </button>
-                    {education && <Education />}
+                    {education && <Education onDataSave={onDataSave} />}
                 </div>
             </div>
             <div className='section2'>
@@ -71,7 +80,26 @@ export default function app() {
                         <div>{data.address}</div>
                     </div>
                 </div>
-                <div id='body'></div>
+                <div id='body'>
+                    <div id='edu'>
+                        <div id="edu-title"><h1>Education</h1></div>
+                        <div id="edu-content">
+                            <div><b>Degree</b>: {data.degree}</div>
+                            <div><b>School</b>: {data.school}</div>
+                            <div><b>City</b>: {data.city}</div>
+                            <div><b>Country</b>: {data.country}</div>
+                        </div>
+                    </div>
+                    <div id='exp'>
+                        <div id="exp-title"><h1>Education</h1></div>
+                        <div id="exp-content">
+                            <div><b>Job</b>: {data.job}</div>
+                            <div><b>Company</b>: {data.company}</div>
+                            <div><b>Start-date</b>: {data.sdate}</div>
+                            <div><b>End-date</b>: {data.edate}</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     );

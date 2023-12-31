@@ -1,15 +1,26 @@
 import App from './app.jsx'
 import '../styles/education.css'
 import { useState } from 'react';
-export default function education() {
+export default function education({ onDataSave }) {
     const [JobData, SetJobData] = useState('');
     const [CompanyData, SetCompanyData] = useState('');
     const [SDateData, SetSDateData] = useState('');
     const [EDateData, SetEDateData] = useState('');
 
+    const handleSave = (e) => {
+        e.preventDefault();
+        onDataSave((prevData) => ({
+            ...prevData,
+            job: JobData,
+            company: CompanyData,
+            sdate: SDateData,
+            edate: EDateData,
+        }));
+    }
+
     return (
         <div className='container'>
-            <form>
+            <form onSubmit={handleSave}>
                 <div>
                     <h1>Job title</h1>
                     <input type="text" name='job' value={JobData} onChange={(e) => SetJobData(e.target.value)} />
