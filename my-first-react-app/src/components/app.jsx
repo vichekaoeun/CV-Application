@@ -91,7 +91,7 @@ export default function app() {
                         </div>
                     </div>
                     <div id='exp'>
-                        <div id="exp-title"><h1>Education</h1></div>
+                        <div id="exp-title"><h1>Experience</h1></div>
                         <div id="exp-content">
                             <div><b>Job</b>: {data.job}</div>
                             <div><b>Company</b>: {data.company}</div>

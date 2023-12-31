@@ -1,4 +1,5 @@
 # CV-Application
-A React learning project
+A simple React learning project
+- It helps generate resume templates
 # Demo
 https://cv-application-2vus.vercel.app/
